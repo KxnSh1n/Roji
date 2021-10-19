@@ -1,0 +1,1501 @@
+# This is a comment. Comments will be very useful throughout  this code. They don't appear on a running code.
+
+# Consider a comment like an invisible ink, you can see it only if yoou know how to.
+
+#
+
+#
+string = "hello"
+
+integer = 1
+
+a_list = [1, 2, 3]
+
+boolean = True
+
+also_boolean = False
+
+a_float = 3.14
+
+# These are types of variable Python can have.
+
+# Types are the ones defining the meaning of a variable.
+
+# Strings (str) are simple sentences surrounded by double quotes (") or single quotes (').
+
+# Integers (int) are used to store numbers, and don't require any quotes.
+
+# Floats (float) are used to store periodic numbers, and don't require any quotes.
+
+# Booleans (bool) are used to know whether something is True or False.
+
+# They can also be used to set a variable with a pre-set value. (isRaining = False)
+
+# Lists (list) are used to store any Type, whether it's a string, an integer, a float, or a boolean.
+
+# All types can be put together on a list, so if you want to put strings and integers together, you can.
+
+# You can put any type on a list, but the main rule is that all types need to respect their rules to be put on a list.
+
+#
+
+#
+
+isRaining = False
+
+brand = "H&M"
+
+print(isRaining)
+
+print(brand)
+
+# Types can have any variable name.
+
+# This is useful to have a pre-valued variable at hand.
+
+#
+
+#
+
+newBrand = "ovs"
+
+print(newBrand.upper())
+
+print(newBrand.replace("O", "o"))
+
+print(len(newBrand))
+
+print(newBrand == "OVS")
+
+print(newBrand == "ovs")
+
+print(newBrand != "OVS")
+
+print(newBrand != "ovs")
+
+print("o" in newBrand)
+
+print("o" not in newBrand)
+
+# These are various functions to tweak our code.
+
+#
+
+#
+
+name = "Ivan"
+
+email = f"""
+
+greetings {name},
+how are you?
+had a fun conversation with you.
+I am {8 + 8} years old.
+"""
+
+print(email)
+
+
+# These are formatted and compact ways to make an effective code.
+
+# Formatting is useful to put different types on a variable.
+
+# You can access it by typing 'f' followed by 3 single quotes (') or 3 double quotes (") on the variable.
+
+# You can also access it by typing 'f' and double quotes (") surrounding the variable with them.
+
+#
+
+#
+
+def hello():
+    name_1 = "Maria"
+    surname = "Grace"
+    return name_1, surname
+
+
+print(hello())
+
+# This is the main function of indentation. Indentation is the space automatically (almost every time) by the system.
+
+# This helps knowing what is the function of something (in this case 'hello' contains 'Maria' and 'Grace').
+
+#
+
+#
+
+addition = 10 + 2
+
+subtraction = 10 - 2
+
+multiplication = 10 * 2
+
+division = 10 / 2
+
+modular = 10 % 2
+
+modular_rest = 10 % 7
+
+power = 2 ** 4
+
+print(addition, subtraction, multiplication, division, modular, modular_rest, power)
+
+# These are all the operations possible in Python. We have addition, subtraction, multiplication, division, and modular.
+
+# The modular function in particular is useful to know how many times can a number fit in another.
+
+# The result of a modular is the rest.
+
+# The power function in particular is used to know how many times the primary number (left) has to multiply itself.
+
+#
+
+#
+
+print(10 > 5)
+
+print(10 < 5)
+
+print(10 >= 5)
+
+print(10 <= 10)
+
+print(10 == 10)
+
+print(10 != 10)
+
+# Comparisons are useful to know if a number is greater (>) or less (<) than another number.
+
+# Comparisons will always give a boolean value (True or False) based on whether an answer is true or false.
+
+# Greater/Less-Than-Or-Equal (>= and <=) are used to check whether a number is more/less or equal than another number.
+
+# Is-Equal-To (==) is used to know whether a number is the same as another.
+
+# Is-Different-Than (!=) is used to know whether a number is different from another number.
+
+#
+
+#
+
+print((10 > 5) and (1 > 3))
+
+# This will result in False.
+
+print((10 > 5) and (1 < 3))
+
+# This will result in True.
+
+print((10 > 5)
+      and (1 < 3)
+      and "Hi" == "Hi")
+
+# This will result in True.
+
+print((10 > 5)
+      and (1 < 3)
+      and "Hi" == "Hello")
+
+# This will result in False.
+
+print((10 < 5)
+      or (1 > 3)
+      or "Hi" == "Hello")
+
+# This will result in False.
+
+print((10 < 5)
+      or (1 > 3)
+      or "Hi" == "Hi")
+
+# This will result in True.
+
+print("Ivan" == "Maria")
+
+# This will result in False.
+
+print(not ("Ivan" == "Maria"))
+
+# This will result in True.
+
+# But why is that?
+
+# Logical Operations consist of understanding whether something is True or False.
+
+# The 'and' bridge consists of adding two or more operations together.
+
+# If even one operation is False on an 'and' logical operation, the whole operation is False.
+
+# If all operations are True on an 'and' logical operation, the whole operation is True.
+
+# The 'or' bridge has the same goal of an 'and' bridge.
+
+# The difference of an 'or' bridge is that even if only one operation is True, the whole operation is True.
+
+# If all operations on an 'or' bridge are False, the result will be False.
+
+# The 'not' prefix is used to know whether something is False or not, and if it is, it will display "True".
+
+# Think of the 'not' prefix as someone confirming that an operation is False: if they confirm it, the answer is True.
+
+# Another example would be to think of the 'not' prefix as an 'Is-Different-Than' (!=), but with different uses.
+
+#
+
+#
+
+brand_2 = "Nike"
+
+brand_2 = "Adidas"
+
+print(brand_2)
+
+# This will result in 'Adidas'.
+
+number = 0
+
+number = number + 1
+
+number += 9
+
+number -= 5
+
+number *= 2
+
+number /= 5
+
+number **= 5
+
+print(number)
+
+# This will result in 32.
+
+# Assignment Updates are used to update the same variables.
+
+# To update a variable, you simply have to type the variable again and type the new value.
+
+# Assignment Operators are aimed to integers in particular, and their goal is to update a number with operators.
+
+# To update the value of an integer with an operator, we put the operator before the equal sign (=).
+
+# Any operator can be used, whether is an addition, a subtraction, a multiplication, a division, etc.
+
+# Operators don't need to be used all the time, since you can simply update a number using the Update feature.
+
+#
+
+#
+
+number_2 = 15
+
+number_3 = -1
+
+number_4 = 0
+
+if number_2 > 0:
+
+    print(f"Number {number_2} is positive!")
+
+else:
+
+    print(f"Number {number_2} is negative!")
+
+if number_3 > -1:
+
+    print(f"Number {number_3} is positive!")
+
+else:
+    print(f"Number {number_3} is negative!")
+
+if number_4 == 0:
+
+    print(f"Number {number_4} is 0!")
+
+else:
+
+    print(f"Number {number_4} is negative or positive!")
+
+# First example(s)
+
+if number_2 > 0:
+
+    print(f"Number {number_2} is positive!")
+
+elif number_2 == 0:
+
+    print(f"Number {number_2} is 0!")
+
+else:
+
+    print(f"Number {number_2} is negative!")
+
+# Second example.
+
+
+# 'If' statements are used to describe whether or not an action should be executed.
+
+# They use 'Greater-than' (>), 'Lower-than' (<), Equal-to (==) values, and Different-than (!=) operators.
+
+# Any value can be used to make an 'If' statement work, whether it's a string, an integer, a float, or a boolean.
+
+# The second example implies a compact version of the first 3 codes together. We used an 'elif' statement
+#
+# and an 'else' statement.
+
+# 'Elif' statement are used to add another situation with another solution, and we can add them as much as we want.
+
+# 'Else' statement are used to show a solution if both the 'if' and the 'elif' statements result in False.
+
+# 'If' statements can be used only one time at the beginning of an 'if' statement.
+
+# 'Elif' statements can be used only in the middle of the 'if' statement, and we can add them as much as we need.
+
+# 'Else' statements can be used only at the end of an 'if' statement.
+
+#
+
+#
+
+number_5 = 10
+
+if number_5 > 0:
+
+    print("positive")
+
+else:
+
+    print("0 or negative")
+
+message = "positive" if number > 0 else "0 or negative"
+
+print(message)
+
+# Ternary 'if' Statements are even more compact 'if' Statements.
+
+# To create a Ternary 'if' Statement you need a variable to store the Statement, for example 'message'.
+
+# You need to type the solution first, then the 'if' statement itself, then the 'else' statement followed
+#
+# by the solution.
+
+# It's a really handy and easy way to store 'if' statements, but shouldn't be used that much.
+#
+# It can be good if there were a few 'if' statements.
+
+#
+
+#
+
+number_6 = 1
+
+also_number = 2
+
+number_copy = 3
+
+numbers = [number_6, also_number, number_copy]
+
+print(numbers)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+numbers_copy = [-3, -2, -1, 0, 1, 2, 3, "a", "b", "c", True, False, 3.14, 2.99]
+
+print(numbers_copy)
+
+print(numbers_copy[0])
+
+print(numbers_copy[13])
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+also_numbers = [numbers_copy, ["aa", "ba", "ca", "da", "ea"]]
+
+print(also_numbers[0])
+
+print(also_numbers[1])
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+numbers_1 = [-4, -5, -1, 2, 5, 7, 0, 6, 3, 9]
+
+numbers_1.sort()
+
+print(numbers_1)
+
+numbers_1.reverse()
+
+print(numbers_1)
+
+numbers_1.append(1000)
+
+print(numbers_1)
+
+print(len(numbers_1))
+
+# numbers_1.clear()
+
+print(-4 in numbers_1)
+
+print(-3 not in numbers_1)
+
+print(-3 in numbers_1)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+numbers_1.remove(-4)
+
+numbers_1.pop()
+
+numbers_1.pop()
+
+print(numbers_1)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+numbers_2 = [1, 2, 3, 4, 5, 6]
+
+del numbers_2[0:3]
+
+print(numbers_2)
+
+# Lists, as seen before, are used to store multiple values at once.
+
+# Lists can have strings, integers, floats, and booleans.
+
+# They can contain different types of values, so any value can be put on a list.
+
+# A list has an index, which is used to access individual parts of a list.
+
+# Indexes start from the number '0' (beginning) and keep on going until the end of the list.
+
+# If we try to access a value outside of a list, an 'IndexError' will appear.
+
+# We can store lists within lists, within lists, and every list added in a list can be accessed by the index number.
+
+# If we want to add an existing list to another list, we just need to add the variable containing the list.
+
+# Lists have also Methods, and are really useful to tweak our list.
+
+# If we have a list with any value (integers, in this case) that is not put in an increasing order,
+#
+# we use (list_name).sort() to make the list have a correct order.
+
+# If we want to order in a decreasing list, we simply use (list_name).reverse(), and the list will have the lowest
+#
+# value displayed first.
+
+# If we want to add something to a list, we simply use (list_name).append(value_to_add).
+
+# If we want to clear a list, we simply use (list_name).clear().
+#
+# (.clear was turned as a comment for the sake of the demonstration)
+
+# We can remove items from a list by using (list_name).remove(value_to_remove), and it's useful to remove one thing
+#
+# in particular.
+
+# We can also remove items by  using (list_name).pop(), although this will only ensure to remove the last value added
+#
+# into the list.
+
+#
+
+#
+
+numbersList = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5]
+
+numbersSet = {1, 1, 2, 2, 3, 3, 4, 4, 5, 5}
+
+print(numbersList)
+
+print(numbersSet)
+
+lettersSet = {"A", "A", "B", "B", "C", "C"}
+
+print(lettersSet)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+lettersA = {"A", "B", "C", "D"}
+
+lettersB = {"E", "F", "G", "H"}
+
+union = lettersA | lettersB
+
+print(union)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+lettersC = {"I", "J", "K", "L"}
+
+lettersD = {"L", "M", "N", "O", "P"}
+
+intersection = lettersC & lettersD
+
+print(f"Intersection: {intersection}")
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+lettersE = {"Q", "R", "S", "T"}
+
+lettersF = {"S", "T", "U", "V"}
+
+difference = lettersE - lettersF
+
+print(f"Difference: {difference}")
+
+# Sets are similar to lists, but they have a unique feature: They don't allow duplicates.
+#
+# This means that if a set contains 2 or more values that match, only 1 will be displayed.
+
+# Something unique happens when we want to display a set of strings though: They don't always show up in order.
+#
+# The order of strings on a set vary every time we run the code.
+
+# Same as lists, you can put sets together using the 'union' feature (|), and it works the same as a list.
+#
+# If one of the 2 sets contains a value already added on one of the 2 sets, if will not be showed.
+
+# To know what value is actually doubled on a list, we use the 'intersection' feature (&).
+#
+# The result will be all the values doubled.
+
+# If you want to know what values are in a list but not in the other, we use the 'diffrence' feature (-).
+#
+# This will show you what items are in a list that are not in the other.
+
+#
+
+#
+
+person = {
+
+    "name": "Ivan",
+
+    "age": 16,
+
+    "state": "Italy"
+
+}
+
+print(person["name"])
+
+print(person["age"])
+
+print(person["state"])
+
+print(person.keys())
+
+print(person.values())
+
+# person.clear()
+
+print(person.get("name"))
+
+print(person.get("age"))
+
+print(person.get("state"))
+
+person["age"] = 17
+
+print(person.get("age"))
+
+# Dictionaries are used to assign a variable to a value and store it.
+
+# It can be used to keep things clean and organized.
+
+# To create a dictionary, you need a variable (in this case, 'person'), and curly braces ({}).
+#
+# In between the curly braces, we type our variables and assign them to a value using a colon (:).
+#
+# To know what variables are written inside a dictionary, we use (dictionary_name).keys.
+#
+# To know what values are writen we use (dictionary_name).values.
+
+# We can also show on the console values as individual.
+#
+# To show a particular value, we use ('dictionary_name'.get('associated_variable_name').
+
+# We can also update a certain value on a dictionary, by using:
+#
+# 'dictionary_name'.['associated_variable_name'] = 'new_value'.
+
+#
+
+#
+
+people = ["Irish", "Hannah", "Pac", " Recker"]
+
+print(people[0])
+
+print(people[1])
+
+print(people[2])
+
+print(people[3])
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+people = people
+
+for name in people:
+    print(name)
+
+peopleSet = {"Irish", "Hannah", "Pac", "Recker", "Recker"}
+
+for name in peopleSet:
+    print(name)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+my_info = {
+    "name": "Recker",
+    "age": 30,
+    "state": "USA"
+}
+
+for key in my_info:
+    print(f"Key: {key} Value: {my_info[key]}")
+
+# If we want something that will help us display a whole list or set as a list, we can use 'for loops',
+#
+# without having to print the values individually.
+
+# 'For' loops are perfect to make short loops between lists or sets.
+
+# To create a 'for' loop, we first have to type 'for' (used to know how many strings are inside of a loop, here it's 4),
+#
+# followed by 'name' ('name' is the object we assign to the strings in the list or set),
+#
+# then 'in' (used as a bridge to know where to take the strings),
+#
+# and finally the variable we want to use ( in this case 'people').
+
+# 'For' loops can be used for sets too, that means that all the principles are the same, but if something is on a set
+#
+# twice, it will not be counted.
+
+# You can use 'for' loops to loops through dictionaries too. That means that you can loop for how many variables
+#
+# are inside a dictionary, and you can display the values too.
+
+#
+
+#
+
+number_7 = 0
+
+while number_7 < 10:
+
+    print(number_7)
+
+    number_7 += 1
+
+else:
+
+    print("loop ended because the number is equal to 10!")
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+also_number_7 = 0
+
+while also_number_7 < 10:
+
+    if also_number_7 == 5:
+        break
+
+    also_number_7 += 1
+
+    print(also_number_7)
+
+    print("this is a space!")
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+even_more_number_7 = 0
+
+while even_more_number_7 < 10:
+
+    if number < 5:
+        continue
+
+    even_more_number_7 += 1
+
+    print(even_more_number_7)
+
+else:
+
+    print("number has reached 10!")
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+for n in [1, 2, 3, 4, 5, 6, 7, 8, 9, ]:
+
+    if n < 5:
+        continue
+
+    print(n)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+for n in [1, 2, 3, 4, 5, 6, 7, 8, 9]:
+
+    if n == 5:
+        break
+
+    print(n)
+
+
+# 'While' loops are another loop that is possible to create on Python.
+
+# They are similar to 'for' loops, but they have slight differences and purposes.
+
+# 'While' loops can only be operated with '==', '!=', >, <, so its main use is for comparison.
+
+# If the number, for example, is lower than 10, the loop starts. The loop is infinite.
+
+# Because the loop is infinite, we have to find a way to stop it, otherwise the program will crash.
+#
+# To do so, we need to make the number increase by, for example, 1, so that the number increases everytime it loops.
+
+# If a number is for example 0, the 'while' loop will loop for a total of 10 times, since it counts from 0 to 9.
+#
+# 9 is the last lowest number compared to 10.
+
+# If a loop reaches its end, we can also add an 'else' statement that, for example, will ensure us that the
+#
+# loop has ended.
+
+# 'Break' and 'continue' statements are really useful for both 'while' and 'for' loops.
+
+# They help the code know whether if it should continue the loop or not.
+
+# With a 'break' statement, you will break the loop cycle, but to apply it effectively, you first need an 'if'
+#
+# statement and a condition, for example "if 'number' == 5" means "if the number is equal to 5, do this".
+
+# The 'break' statement is going to be placed under the 'if' statement, to tell the program that we want to break
+#
+# a loop under 'this' condition (in this case if the number is equal to 5).
+
+# With a 'continue' statement, you will be able to continue a loop until the condition is equal to the number
+#
+# we wanted to make a comparison of.
+
+# Same as a 'break' statement, we want to use an 'if' statement first to set a condition,
+#
+# in this case "if 'number' < 5 do this".
+
+# The 'continue' statement is going to be placed under the 'if' statement, so that a 'continue' loop will begin.
+#
+# The number will stop increasing only when it becomes the same as the number we wanted to compare on the 'while' loop.
+
+# What's interesting to note is that in a 'break' statement will skip the number a variable has and go to the next one.
+#
+# That means that if the variable inside a 'break' statement has a value of 0, the console will show counting from 1.
+
+# A 'continue' statement will never show the values looped, so if we want to know when a 'continue' loop has ended,
+#
+# we have to use an 'else' statement and show some text.
+
+# We can use 'break' and 'continue' with lists too, since they can be used on a 'for' statement.
+
+# We set a 'for' loop as usual, and we add the variable containing a list
+#
+# (We created one on the spot for showing purposes).
+
+# We then create an 'if' statement under the 'for' loop, that will contain the condition (In this case "if n < 5")
+#
+# We then add the 'continue' statement, which will tell to conveniently show the list.
+
+# The result of it will be that any number lower than 4 will not be showed, so it starts from 5 and ends at 9.
+#
+# This is useful to filter any value lower than the pre-set one.
+
+# If instead of using a 'lower-than' operator we use a 'higher-than' operator, it will show only numbers lower than 4.
+
+# The procedure to create this with a 'break' statement are the same, only thing to change is the 'continue' with
+#
+# the 'break' statement, and change the 'higher-than'/'lower-than' (>/<) operators with an 'is-equal-to' (==) operator.
+
+# The result will be that any number higher than 5 will not be showed.
+#
+# One thing to note is that if you set a number to be equal to 5, the numbers showed will be from 1 to 4.
+
+#
+
+#
+
+def greet():
+    print(f"greetings!")
+
+
+greet()
+
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+def greet_1(name):
+    print(f"greetings {name}!")
+
+
+greet_1("Ivan")
+
+greet_1("Maria")
+
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+def greet_2(name, age):
+    print(f"Your name is {name} and you're {age} years old!")
+
+
+greet_2("Ivan", 16)
+
+greet_2("Maria", 20)
+
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+def greet_3(name, age=10):
+    print(f"Hello, {name}, you're {age} years old!")
+
+
+greet_3("Ivan")
+
+greet_3("Maria", 20)
+
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+def greet_4(name, age=10):
+    if age < 11:
+
+        print(f"Sorry {name}, you're not old enough! (age required: {age}+)")
+
+    else:
+
+        print(f"Greetings {name}, you're {age} years old, so you can access the club!")
+
+
+greet_4("Ivan")
+
+greet_4("Maria", 20)
+
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+def greet_5(name, age=18):
+    if not age < 19:
+
+        print(f"Welcome {name}, you're {age} years old, so we redirected you to the adults page!")
+
+    else:
+
+        print(f"Welcome {name}, you're {age} years old, so we redirected you to the teens page!")
+
+
+greet_5("Ivan")
+
+greet_5("Maria", 20)
+
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+def is_adult(age):
+    if age >= 18:
+
+        print("Officially adult!")
+
+    else:
+
+        print("Not yet an adult!")
+
+
+is_adult(45)
+
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+def is_adult_1(age):
+    if age >= 18:
+
+        return True
+
+    else:
+
+        return False
+
+
+result_1 = is_adult_1(45)
+
+print(result_1)
+
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+def is_adult_2(age):
+    return age >= 18
+
+
+result_2 = is_adult_2(45)
+
+print(result_2)
+
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+def convert(gender="unknown"):
+    if gender.upper() == "M":
+
+        return "Male"
+
+    elif gender.upper() == "F":
+
+        return "Female"
+
+    else:
+
+        return f"Gender {gender} is unknown!"
+
+
+print(convert("F"))
+
+print(convert("M"))
+
+print(convert("f"))
+
+print(convert("m"))
+
+print(convert("elephant"))
+
+# Functions are very useful and simple way to make your code organized.
+
+# You can think of functions as a dictionary, because you only have to call a certain term in order to
+#
+# have an operation.
+
+# Functions, even though 'similar' to a dictionary, is really different from it, because a function can store
+#
+# commands, operations, loops, etc...
+
+# Think of a function as an advanced variable, because the variable can only store one type, and a function can store
+#
+# entire operations.
+
+# to create a function, we have to add the 'def' statement, which will define our function. After that, we have
+#
+# to add a keyword of our liking, same as a variable, and close to it we need both parenthesis and a colon.
+
+# We can add arguments to a function: Arguments are contained between the parenthesis. We can have any name we want,
+#
+# and how many arguments we like, as long as they are separated from a comma (,).
+
+# To make an argument work properly, we need to set a 'display' (print) condition with formatted text,
+#
+# so we can add our arguments inside, such as, for example, 'name', between curly braces ({}).
+
+# Putting curly braces helps knowing the program know which is the value that can be updated.
+
+# To 'summon' a function you just need to type in the function's name, and the both parenthesis after it.
+#
+# If you have pre-set arguments, they need to be all fulfilled, otherwise it will give an error.
+
+# An example of fulfilled arguments is "function_name(custom_term, custom_term_2)".
+
+# We can add pres-set values for an argument, for example function_name(custom_term = "hello world!"):
+#
+# This can be useful on when a user hasn't fulfilled all the arguments, and we don't want to have an error.
+
+# We can also add 'if' statements to create a condition, same as 'for' loops, 'while' loops, etc...
+
+# With 'if' statements conditions you can create instances with pre-set arguments, such as:
+#
+# " 'hello!' if variable > argument_preset else 'goodbye!' ".
+
+# Functions can also store booleans, such as True and False. To operate with them we can use 3 main ways,
+#
+# one simpler than the other.
+
+# We can create instances with 'if' statements with comparison operators, so that the result will be True or False.
+#
+# The first method can be used not only to express booleans (since you can display True and False), but you can
+#
+# also show personalized text.
+
+# The second and third one imply only True and False, and require the 'return' statement.
+
+# The 'return' statement can be thought as the "input-output" system. If you do something you will get something
+#
+# in return, in fact.
+
+#
+
+# You can use 'return' statements for other functions too, but for the sake of demonstration, we will only show
+#
+# a True/False situation.
+
+# So, to wrap it up, if you're under 18 you will get True, whereas if you're over 18, you will get False.
+
+# The last method is to simplify even more the process, by typing directly "return >= 18" at the end.
+#
+# The result is the same, so if you want something compact that implies a boolean, this is the best method for you.
+
+# But the 'return' statement doesn't have to be used specifically for booleans: In fact, it can be used to display
+#
+# any type, such as strings, integers, floats, and, of course, booleans.
+
+# We use this functionality in this case to match "M" and "F" as, respectively, "Male" and "Female".
+
+# We can use an 'else' statement in this case too, since both statements can go together, as a default response.
+
+#
+
+#
+
+import math
+
+print(math.sqrt(144))
+
+from math import sqrt
+
+print(sqrt(144))
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+import calculator
+
+print(calculator.add(2, 2))
+
+print(calculator.sub(2, 2))
+
+print(calculator.mtp(2, 2))
+
+print(calculator.div(2, 2))
+
+from calculator import div
+
+print(div(2, 2))
+
+
+# Python comes with built-in functions, such as 'math', for example.
+#
+# From 'math' we can import various functions, such as the pi, square roots, etc...
+
+# If we only want a specific feature from the 'math' built-in function, we can use the 'from' and 'import' statements.
+#
+# We put 'from' at the beginning, the built-in function in the middle, the 'import' statement, and finally the feature.
+
+# After importing the only the features we need, we only have to type the feature we want to use and,
+#
+# if needed, a value between parenthesis.
+
+# Over the pre-built functions of Python, we can also import functions made by ourselves or from others.
+#
+# To do so you need to (in this case) create a new .py file, and add all the functions you want.
+
+# A custom-made function has the same rules as a pre-built one, so if you want a specific feature you can
+#
+# use 'from' and 'import' statements. You also only need to type the feature you imported when needed.
+
+#
+
+#
+
+class Computer:
+
+    def __init__(self, model, price):
+        self.model = model
+
+        self.price = price
+
+    def browse(self, web_browser):
+        print(f"{self.model} is loading {web_browser}")
+
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+macbook = Computer("Macbook Air", 1200)
+
+imac = Computer("iMac", 2000)
+
+
+def __str__(self) -> str:
+    # The "-> str" is totally optional. Nothing happens if you remove it or not.
+
+    return f"Brand = {self.model} \n Price = {self.price}"
+
+
+# \n is used to create a new line.
+
+print(macbook)
+
+print(imac)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+macbook = macbook
+
+imac = imac
+
+print(macbook.model)
+
+print(macbook.price)
+
+macbook.browse("Safari")
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+print(imac.model)
+
+print(imac.price)
+
+imac.browse("Safari")
+
+# Classes are one of the most important parts of Python, capable of not only make your code organized, but also,
+#
+# make simple formulations with (willingly) complex calculations.
+
+# A class can be considered like an even greater version of a function, because of the simple formulas and
+#
+# (willingly) complex calculations we can put.
+
+# We create a class by using the 'class' function, followed by a name (class names are suggested to start with
+#
+# an uppercase, contrary to the other cases), and parenthesis with 'self' inside of it, with a colon at the end.
+
+# 'Self' is the instance referred to a current class, so a function inside of a class can't be used outside
+#
+# of it as a single.
+
+# '__init__' is what we call a "constructor", since it's the one that makes converting and
+#
+# showing our attributes possible.
+
+# To make a function of a class work correctly, we type "function_name.self = related_name".
+#
+# Doing so, we will ensure that the constructor knows what one thing is to the detail.
+
+# After creating a class, we can 'summon' it by assigning it to a variable, and add some parenthesis with
+#
+# the values that we want to show (values == attributes).
+
+# To 'summon' an actual class we first have to make a variable for it. After that we have to add the name of
+#
+# the class, followed by some parenthesis with all the attributes we need to add, such as "iMac(model) and 2000(price)".
+
+# The same class can have different variables, as long as the variable name doesn't match any of the previous ones.
+#
+# The values can be changed to our preference.
+
+# Objects per single can be 'summoned', by typing 'class_name.attribute("any_value")'.
+
+#
+
+#
+
+import datetime
+
+print(datetime.datetime.now())
+
+# Date and time.
+
+print(datetime.date.today())
+
+# Only date.
+
+print(datetime.datetime.now().time())
+
+# Only time.
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+from datetime import datetime
+
+print(datetime.now().date())
+
+print(datetime.today())
+
+print(datetime.now().day)
+
+print(datetime.now().year)
+
+print(datetime.now().month)
+
+print(datetime.now().time())
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+now = datetime.now()
+
+print(now)
+
+print(now.strftime("%d-%m-%Y %H:%M:%S"))
+
+# Dates are useful to keep track of time on a program, and there is a specific pre-built function on Python,
+#
+# called 'datetime'.
+
+# With 'datetime' you can know exactly the date and the time, and you can also know only an info in particular.
+
+# to print the full date with time, you simply have to display "datetime.datetime.now()". This will show the date,
+#
+# the time,and even the second in detail.
+
+# Like any pre-built function/function, we can import a specific thing from it, such as 'datetime'.
+#
+# 'Datetime' is the factor that manages to let the user know the date and the time, in particular.
+
+# If we want to know what the date and time of now is, we no longer need to type 'datetime.datetime.now()',
+#
+# instead, only 'datetime.now()'.
+
+# This works for anything 'datetime' has, such as knowing only the date, the time, the day, the month, or the year.
+
+
+# Formatting dates is useful to set a calendar and clock to our own liking, like for example changing the
+#
+# position of the month with the day, etc...
+
+# We can change this by using ".srtftime", which stands for "string formatted time". It's basically
+#
+# an editor for the datetime pre-built function.
+
+#
+
+#
+
+file_name = open("./data.csv", "r+")
+
+file_name.write("id, name, email\n")
+
+file_name.write("123456, Ivan, ivan@gmail.com\n")
+
+file_name.write("567890, Matt, matt@outlook.com\n")
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+file_name_1 = open("./data.csv", "a")
+
+file_name_1.write("246810, Maria, maria@onedrive.com\n")
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+file_name_2 = open("./data.csv", "r")
+
+print(file_name_2.read())
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+# for line in file_name:
+
+#  print (line)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+print(file_name.readlines())
+
+# file_name.close()
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+with open("./data.csv", "r") as file:
+    print(file.read())
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+import os.path
+
+file_name_demonstration = "./data.csv"
+
+# In this case "./" is not necessary.
+
+os.path.isfile(file_name_demonstration)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+if os.path.isfile(file_name_demonstration):
+
+    with open("./data.csv", "r") as file:
+
+        print(file.read())
+
+else:
+
+    print(f"File {file_name_demonstration} does not exist!")
+
+# Creating files is really important with Python, because it allows us to store information outside of
+#
+# the main sheet we're using.
+
+# Files can be of 3 categories: 'read-only' files, 'write-only' files, and 'read-and-write' files.
+
+# The meaning is pretty much self-explanatory, and if you try to update a 'read-only' file, for example,
+#
+# you'll come up with an error, saying that the file can't be written in, same for the other way.
+
+# There is a similar feature can be useful to update a file, called 'append'. It pretty much works the same
+#
+# way as an 'append' command of a list, and it lets you add something you want on a file.
+
+# to create a file, you need to create a variable to store it, then type 'open' followed by a parenthesis
+#
+# where we will type the default term 'data.csv' between double quotes, comma, and the type of file we want.
+
+# The ".csv" name (AKA file name) can be modified to our liking, we will use "data" for the sake of demonstration.
+
+# The type of file has to be between double quotes too, so: "w" (write), "r" (read),
+#
+# "r+" (read and write), "a" (append).
+
+# You can also implement 'for' statement loops, and it will repeat for how many written lines are
+#
+# inside of a file.
+
+# you can also make the program read the lines you've written with the ".readlines()" command.
+#
+# This will make the program read everything written on the parenthesis, as well as what is written on the file itself.
+
+# For a factor of comfort, we can use the "file.read()" command, to display everything written on a file.
+#
+# This can be implemented inside a "with" statement.
+
+# 'With' statements are used to let the program know with what something should be executed, such as, for example,
+#
+# 'open ("./data.csv", "r") in file:" which means "With this 'open' in file, do this:", in this case display the file.
+
+# We can add 'with' statements to a 'for' statement loop, so that it can display multiple times the info
+#
+# we wrote on a file. Not very useful, but can come in handy in some situations.
+
+# To know whether a file exists or not, we can import the 'os.path' pre-built function that will follow
+#
+# the traces of a file to the source in order to understand whether it exists or not.
+
+# To implement this efficiently, as seen on the example, we can use an 'if' statement, followed by a 'with' statement,
+#
+# and finally an 'else' statement, that we can use for example to let the user know that the file doesn't exist.
+
+# It is obligatory to close a file in order to make it work properly (and to not make it updatable), and to
+#
+# do so, we use "file_name.close()", so that we announce the end of a file.
+
+# This is obligatory only if we don't use a 'with' statement, since with it, it closes the file automatically.
+
+#
+
+#
+
+from urllib import request
+
+req = request.urlopen("http://www.google.com")
+
+# print (req)
+
+print(req.getcode())
+
+print(req.read())
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+# import json
+
+# jokes = request.urlopen ("http://official-joke-api.appspot.com/random_ten")
+
+# print (jokes.getcode())
+
+# print (jokes.read())
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+# jokes = jokes
+
+# print (jokes.getcode())
+
+# data = jokes.read()
+
+# jsonData = json.loads(data)
+
+# print (jsonData)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+# We can import entire links and data from the internet to Python, using the 'urllib' pre-built function.
+#
+# How this works is that we first have to create a variable to assign our command and 'summon' it anytime.
+
+# For demonstration purposes, we imported this command in particular from the 'urllib' function, so that
+#
+# we don't have to type 'urllib' all the time.
+
+# we use the command 'request.urlopen (site_url)' in order to display our link in the program.
+#
+# It's important to note that the program will display only the (in this case, HTML) code.
+
+# Since the page is not working, we can't see 10 random jokes to show another example. :(
+
+#
+
+#
+
+# import requests
+
+# url = "http://wwww.google.com"
+
+# response = requests.get(url)
+
+# print (response.status_code)
+
+# data = response.text
+
+# jsonData = json.loads(data)
+
+# print (jsonData)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+# We previously stated that we can import functions outside of Python, whether it's our custom functions,
+#
+# or functions made by other people. To do so, we need to install them first.
+
+# We install functions by going to the terminal, (bottom, under the 'run' tab) and type "pip install (custom_function)".
+#
+# In this case we used 'requests', but you can use any other function that other people have made.
+
+# After waiting for the installation, we simply have to import the function by using 'import custom_function'.
+#
+# Now we can use all the commands the function has stored inside of it.
+
+# All the custom functions are available because of 'pip', which can be considered as a library with custom
+#
+# functions, which can be installed and uninstalled anytime by the user's preference.
+
+#
+
+#
+
+import pyttsx3
+
+pyttsx3.speak("Greetings Ivan!")
+
+# We imported a new function, called "pyttsx3" (Python Text-to-Speech x3), that will convert,
+#
+# in fact, our text to speech.
+
+# Here we made a bland example, making the both say "Greetings Ivan!" with the command.
+
+# This can be really useful if we make an interactive site.
+
+# We can create even more complex things for our bot to say, such as creating a 'for' loop and creating a list,
+#
+# or it could've worked better if the json worked fine and the bot read our jokes instead.
+
+# Checking 'pypi.com' and looking for this function will show you all the instructions and tweakings
+#
+# to set the bot to your liking.
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+
+# This is everything for this tutorial! This covered the basics of Python, and with everything learned, you are
+#
+# ready to explore various aspects of Python, such as machine learning, AI, and everything related to problem-solving!
