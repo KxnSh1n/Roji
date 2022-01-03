@@ -1,0 +1,48 @@
+# OOP stands for object-oriented-programming, and simply put,
+# 
+# its objective is to simply assign various functions in different sections.
+
+class Pet:  # This class is what we call a "Mother" class, where other classes inherit its functions.
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def show(self):
+        print(f"I am {self.name} and I am {self.age} years old")
+        
+        
+class Dog(Pet):  # This class has inherited the "Pet" class functions, and we can access those functions
+                 # with the "super()." method
+    def __init__(self, name, age, color):
+        super().__init__(name, age)
+        self.color = color
+
+    def speak(self):
+        print("Bark")
+
+    def show(self):
+        print(f"I am {self.name}, I'm {self.age}, and I'm {self.color}")
+
+
+class Cat(Pet):  # Same goes here for the "Cat" class, where it takes the name and age from the "Pet" class
+    def __init__(self, name, age, color):
+        super().__init__(name, age)
+        self.color = color
+
+    def speak(self):
+        print("Meow")
+
+    def show(self):
+        print(f"I am {self.name}, I'm {self.age}, and I'm {self.color}")
+
+
+p = Pet("Doug", 18)
+p.show()
+
+c = Cat("Bill", 29, "Orange")
+c.show()
+c.speak()
+
+d = Dog("Brownie", 12, "Brown")
+d.show()
+d.speak()
